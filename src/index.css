@@ -24,7 +24,7 @@
   .print-menu-item {
     page-break-inside: avoid;
     break-inside: avoid;
-    margin-bottom: 3px;
+    margin-bottom: 9px;
   }
 
   .print-dish-title {

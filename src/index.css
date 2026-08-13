@@ -28,32 +28,32 @@
   }
 
   .print-dish-title {
-    font-size: 10px;
+    font-size: 113px;
     font-weight: bold;
     color: #1c1917; /* stone-900 */
     line-height: 1.1;
   }
 
   .print-dish-subtitle {
-    font-size: 8px;
+    font-size: 9px;
     color: #57534e; /* stone-600 */
     margin-bottom: 2px;
     line-height: 1.1;
   }
 
   .print-script-container {
-    margin-top: 2px;
+    margin-top: 3px;
   }
 
   .print-script-line {
-    font-size: 6px;
+    font-size: 4px;
     color: #888888;
     line-height: 1.1;
     margin-bottom: 1px;
   }
 
   .print-script-speaker {
-    font-size: 6px;
+    font-size: 4px;
     color: #888888;
     font-weight: bold;
   }

@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 10mm;
+  }
+
+  /* Reset body and html */
+  html, body {
+    height: auto;
+    background-color: white;
+  }
+
+  /* Hide everything except the print-layout */
+  .screen-layout {
+    display: none !important;
+  }
+
+  .print-layout {
+    display: block !important;
+  }
+
+  .print-menu-item {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 16px;
+  }
+
+  .print-dish-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1c1917; /* stone-900 */
+    line-height: 1.3;
+  }
+
+  .print-dish-subtitle {
+    font-size: 12px;
+    color: #57534e; /* stone-600 */
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+
+  .print-script-container {
+    margin-top: 4px;
+  }
+
+  .print-script-line {
+    font-size: 7px;
+    color: #888888;
+    line-height: 1.3;
+    margin-bottom: 2px;
+  }
+
+  .print-script-speaker {
+    font-size: 7px;
+    color: #888888;
+    font-weight: bold;
+  }
+}
+
+@media screen {
+  .print-layout {
+    display: none !important;
+  }
+}

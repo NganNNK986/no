@@ -1,0 +1,6 @@
+{
+  "name": "Quán Quê Menu",
+  "description": "Thực đơn quán Quán Quê kết hợp kịch bản tiếng Nhật giao tiếp 30 món",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

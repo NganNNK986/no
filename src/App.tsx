@@ -35,7 +35,7 @@ const ScreenMenuItem = ({ item }: { item: any }) => {
   );
 };
 
-const PrintMenuItem = ({ item }: { item: any }) => {
+const PrintMenuItem = ({ item, includeScript }: { item: any, includeScript: boolean }) => {
   const shortJaName = item.nameJa.split(' (')[0];
 
   return (
@@ -47,19 +47,22 @@ const PrintMenuItem = ({ item }: { item: any }) => {
         {item.nameVi}
       </div>
 
-      <div className="print-script-container">
-        {item.script.map((line: any, idx: number) => (
-          <div key={idx} className="print-script-line">
-            <span className="print-script-speaker">{line.speaker}:</span> {line.text}
-          </div>
-        ))}
-      </div>
+      {includeScript && (
+        <div className="print-script-container">
+          {item.script.map((line: any, idx: number) => (
+            <div key={idx} className="print-script-line">
+              <span className="print-script-speaker">{line.speaker}:</span> {line.text}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
 
 export default function App() {
   const [printError, setPrintError] = useState(false);
+  const [includeScript, setIncludeScript] = useState(true);
 
   const handlePrint = () => {
     try {
@@ -83,14 +86,25 @@ export default function App() {
           <header className="text-center mb-16 lg:mb-24 relative">
             
             {/* Print Button */}
-            <div className="absolute top-0 right-0 flex flex-col items-end">
-              <button
-                onClick={handlePrint}
-                className="flex items-center gap-2 px-4 py-2 bg-stone-800 hover:bg-stone-900 text-white rounded-lg shadow-sm font-semibold transition-colors"
-              >
-                <Printer className="w-5 h-5" />
-                <span>🖨️ 印刷 / Print</span>
-              </button>
+            <div className="absolute top-0 right-0 flex flex-col items-end gap-2">
+              <div className="flex items-center gap-3">
+                <label className="flex items-center gap-2 cursor-pointer text-sm font-medium text-stone-600 hover:text-stone-900 transition-colors bg-white px-3 py-2 rounded-lg border border-stone-200 shadow-sm">
+                  <input 
+                    type="checkbox" 
+                    checked={includeScript}
+                    onChange={(e) => setIncludeScript(e.target.checked)}
+                    className="w-4 h-4 rounded border-stone-300 text-stone-800 focus:ring-stone-800 accent-stone-800"
+                  />
+                  In kèm kịch bản
+                </label>
+                <button
+                  onClick={handlePrint}
+                  className="flex items-center gap-2 px-4 py-2 bg-stone-800 hover:bg-stone-900 text-white rounded-lg shadow-sm font-semibold transition-colors"
+                >
+                  <Printer className="w-5 h-5" />
+                  <span>🖨️ 印刷 / Print</span>
+                </button>
+              </div>
               
               {printError && (
                 <div className="mt-3 p-3 bg-red-50 border border-red-200 text-red-700 text-xs sm:text-sm rounded-lg max-w-xs text-right shadow-sm animate-in fade-in slide-in-from-top-2">
@@ -149,7 +163,7 @@ export default function App() {
               </div>
               <div>
                 {category.items.map(item => (
-                  <PrintMenuItem key={item.id} item={item} />
+                  <PrintMenuItem key={item.id} item={item} includeScript={includeScript} />
                 ))}
               </div>
             </div>

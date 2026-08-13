@@ -133,17 +133,17 @@ export default function App() {
 
       {/* --- PRINT LAYOUT --- */}
       <div className="print-layout">
-        <header style={{ textAlign: 'center', marginBottom: '24px' }}>
-          <h1 style={{ fontSize: '24px', fontWeight: 'bold', margin: '0 0 8px 0', fontFamily: 'serif' }}>Quán Quê</h1>
-          <h2 style={{ fontSize: '16px', fontWeight: '500', margin: '0 0 8px 0', letterSpacing: '2px' }}>クアン・クエ</h2>
-          <p style={{ fontSize: '12px', fontStyle: 'italic', color: '#57534e', margin: 0 }}>ベトナム伝統料理 & 日本語会話</p>
+        <header style={{ textAlign: 'center', marginBottom: '8px' }}>
+          <h1 style={{ fontSize: '14px', fontWeight: 'bold', margin: '0 0 2px 0', fontFamily: 'serif' }}>Quán Quê</h1>
+          <h2 style={{ fontSize: '10px', fontWeight: '500', margin: '0 0 2px 0', letterSpacing: '1px' }}>クアン・クエ</h2>
+          <p style={{ fontSize: '8px', fontStyle: 'italic', color: '#57534e', margin: 0 }}>ベトナム伝統料理 & 日本語会話</p>
         </header>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '8px' }}>
           {MENU_CATEGORIES.map((category, index) => (
-            <div key={category.id} style={index > 0 ? { borderLeft: '1px solid #e5e7eb', paddingLeft: '16px' } : {}}>
-              <div style={{ marginBottom: '16px', textAlign: 'center' }}>
-                <h2 style={{ fontSize: '16px', fontWeight: 'bold', borderBottom: '2px solid #1c1917', paddingBottom: '4px', display: 'inline-block', margin: 0 }}>
+            <div key={category.id} style={index > 0 ? { borderLeft: '1px solid #e5e7eb', paddingLeft: '8px' } : {}}>
+              <div style={{ marginBottom: '6px', textAlign: 'center' }}>
+                <h2 style={{ fontSize: '11px', fontWeight: 'bold', borderBottom: '1px solid #1c1917', paddingBottom: '2px', display: 'inline-block', margin: 0 }}>
                   {category.titleJa}
                 </h2>
               </div>

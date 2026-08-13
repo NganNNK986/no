@@ -40,7 +40,7 @@ const PrintMenuItem = ({ item }: { item: any }) => {
 
   return (
     <div className="print-menu-item">
-      <div className="print-dish-title">
+      <div className={`print-dish-title print-dish-${item.categoryId}`}>
         🇻🇳 {shortJaName}
       </div>
       <div className="print-dish-subtitle">
@@ -139,11 +139,11 @@ export default function App() {
           <p style={{ fontSize: '8px', fontStyle: 'italic', color: '#57534e', margin: 0 }}>ベトナム伝統料理 & 日本語会話</p>
         </header>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '8px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0' }}>
           {MENU_CATEGORIES.map((category, index) => (
-            <div key={category.id} style={index > 0 ? { borderLeft: '1px solid #e5e7eb', paddingLeft: '8px' } : {}}>
-              <div style={{ marginBottom: '6px', textAlign: 'center' }}>
-                <h2 style={{ fontSize: '11px', fontWeight: 'bold', borderBottom: '1px solid #1c1917', paddingBottom: '2px', display: 'inline-block', margin: 0 }}>
+            <div key={category.id} className="print-column">
+              <div style={{ marginBottom: '8px', textAlign: 'center' }}>
+                <h2 className={`print-category-title print-category-${category.id}`}>
                   {category.titleJa}
                 </h2>
               </div>

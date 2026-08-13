@@ -30,8 +30,19 @@
   .print-dish-title {
     font-size: 13px;
     font-weight: bold;
-    color: #1c1917; /* stone-900 */
     line-height: 1.1;
+  }
+
+  .print-dish-hotpot {
+    color: #9B2C2C;
+  }
+
+  .print-dish-side {
+    color: #C76B00;
+  }
+
+  .print-dish-drink {
+    color: #176B87;
   }
 
   .print-dish-subtitle {
@@ -56,6 +67,39 @@
     font-size: 4px;
     color: #888888;
     font-weight: bold;
+  }
+
+  .print-column {
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+  }
+
+  .print-column:not(:first-child) {
+    border-left: 1px solid #e5e7eb;
+  }
+
+  .print-category-title {
+    font-size: 13px;
+    font-weight: bold;
+    padding-bottom: 2px;
+    display: inline-block;
+    margin: 0;
+  }
+
+  .print-category-hotpot {
+    color: #9B2C2C;
+    border-bottom: 1px solid #9B2C2C;
+  }
+
+  .print-category-side {
+    color: #C76B00;
+    border-bottom: 1px solid #C76B00;
+  }
+
+  .print-category-drink {
+    color: #176B87;
+    border-bottom: 1px solid #176B87;
   }
 }
 

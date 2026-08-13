@@ -391,99 +391,19 @@ export const MENU_CATEGORIES: MenuCategory[] = [
     titleVi: 'Món lẩu',
     emoji: '🍲',
     items: [
-      {
-        id: 'hotpot-1',
-        number: 1,
-        nameVi: 'Lẩu Gà Lá Giang',
-        nameJa: 'とり (チキン鍋 / 鶏肉の鍋)',
-        price: '290.000đ',
-        categoryId: 'hotpot',
-        badge: 'Bán chạy',
-        script: ALL_DIALOGUE_LINES.slice(0, 3)
-      },
-      {
-        id: 'hotpot-2',
-        number: 2,
-        nameVi: 'Lẩu Nấm Chay / Mặn',
-        nameJa: 'キノコ (きのこ鍋 / 百茸鍋)',
-        price: '260.000đ',
-        categoryId: 'hotpot',
-        badge: 'Chay / Vegetarian',
-        script: ALL_DIALOGUE_LINES.slice(3, 6)
-      },
-      {
-        id: 'hotpot-3',
-        number: 3,
-        nameVi: 'Lẩu Nhị Sắc (Gà & Nấm)',
-        nameJa: 'ちきん と きのこ の にしょく なべ (二色鍋)',
-        price: '320.000đ',
-        categoryId: 'hotpot',
-        badge: 'Gợi ý / Special',
-        script: ALL_DIALOGUE_LINES.slice(6, 9)
-      },
-      {
-        id: 'hotpot-4',
-        number: 4,
-        nameVi: 'Lẩu Hải Sản Chua Cay',
-        nameJa: 'かいせん なべ (海鮮酸辣鍋)',
-        price: '350.000đ',
-        categoryId: 'hotpot',
-        script: ALL_DIALOGUE_LINES.slice(9, 12)
-      },
-      {
-        id: 'hotpot-5',
-        number: 5,
-        nameVi: 'Lẩu Cua Đồng Mồng Tơi',
-        nameJa: 'かに だし なべ (カニ出汁鍋)',
-        price: '280.000đ',
-        categoryId: 'hotpot',
-        script: ALL_DIALOGUE_LINES.slice(12, 15)
-      },
-      {
-        id: 'hotpot-6',
-        number: 6,
-        nameVi: 'Lẩu Bò Nhúng Dấm',
-        nameJa: 'ぎゅうにく の す しゃぶ なべ (牛肉酢しゃぶ鍋)',
-        price: '310.000đ',
-        categoryId: 'hotpot',
-        script: ALL_DIALOGUE_LINES.slice(15, 18)
-      },
-      {
-        id: 'hotpot-7',
-        number: 7,
-        nameVi: 'Lẩu Thái Hải Sản',
-        nameJa: 'たい ふう かいせん なべ (タイ風海鮮鍋)',
-        price: '330.000đ',
-        categoryId: 'hotpot',
-        script: ALL_DIALOGUE_LINES.slice(18, 21)
-      },
-      {
-        id: 'hotpot-8',
-        number: 8,
-        nameVi: 'Lẩu Dê Thuốc Bắc',
-        nameJa: 'やぎにく の やくぜん なべ (山羊肉の薬膳鍋)',
-        price: '380.000đ',
-        categoryId: 'hotpot',
-        script: ALL_DIALOGUE_LINES.slice(21, 24)
-      },
-      {
-        id: 'hotpot-9',
-        number: 9,
-        nameVi: 'Lẩu Cá Lăng Măng Chua',
-        nameJa: 'なまず と さんたん の なべ (ナマズと酸筍鍋)',
-        price: '340.000đ',
-        categoryId: 'hotpot',
-        script: ALL_DIALOGUE_LINES.slice(24, 27)
-      },
-      {
-        id: 'hotpot-10',
-        number: 10,
-        nameVi: 'Lẩu Ếch Măng Củ',
-        nameJa: 'かえる と たけのこ の なべ (カエルと竹ノ子鍋)',
-        price: '270.000đ',
-        categoryId: 'hotpot',
-        script: ALL_DIALOGUE_LINES.slice(27, 30)
-      }
+      { id: 'hotpot-1', number: 1, nameVi: 'Lẩu Gà Lá Giang', nameJa: 'とり (チキン鍋 / 鶏肉の鍋)', price: '290.000đ', categoryId: 'hotpot', badge: 'Bán chạy', script: ALL_DIALOGUE_LINES.slice(0, 2) },
+      { id: 'hotpot-2', number: 2, nameVi: 'Lẩu Nấm Chay / Mặn', nameJa: 'キノコ (きのこ鍋 / 百茸鍋)', price: '260.000đ', categoryId: 'hotpot', badge: 'Chay / Vegetarian', script: ALL_DIALOGUE_LINES.slice(2, 4) },
+      { id: 'hotpot-3', number: 3, nameVi: 'Lẩu Nhị Sắc (Gà & Nấm)', nameJa: 'ちきん と きのこ の にしょく なべ (二色鍋)', price: '320.000đ', categoryId: 'hotpot', badge: 'Gợi ý / Special', script: ALL_DIALOGUE_LINES.slice(4, 6) },
+      { id: 'hotpot-4', number: 4, nameVi: 'Lẩu Hải Sản Chua Cay', nameJa: 'かいせん なべ (海鮮酸辣鍋)', price: '350.000đ', categoryId: 'hotpot', script: ALL_DIALOGUE_LINES.slice(6, 8) },
+      { id: 'hotpot-5', number: 5, nameVi: 'Lẩu Cua Đồng Mồng Tơi', nameJa: 'かに だし なべ (カニ出汁鍋)', price: '280.000đ', categoryId: 'hotpot', script: ALL_DIALOGUE_LINES.slice(8, 10) },
+      { id: 'hotpot-6', number: 6, nameVi: 'Lẩu Bò Nhúng Dấm', nameJa: 'ぎゅうにく の す しゃぶ なべ (牛肉酢しゃぶ鍋)', price: '310.000đ', categoryId: 'hotpot', script: ALL_DIALOGUE_LINES.slice(10, 12) },
+      { id: 'hotpot-7', number: 7, nameVi: 'Lẩu Thái Hải Sản', nameJa: 'たい ふう かいせん なべ (タイ風海鮮鍋)', price: '330.000đ', categoryId: 'hotpot', script: ALL_DIALOGUE_LINES.slice(12, 14) },
+      { id: 'hotpot-8', number: 8, nameVi: 'Lẩu Dê Thuốc Bắc', nameJa: 'やぎにく の やくぜん なべ (山羊肉の薬膳鍋)', price: '380.000đ', categoryId: 'hotpot', script: ALL_DIALOGUE_LINES.slice(14, 16) },
+      { id: 'hotpot-9', number: 9, nameVi: 'Lẩu Cá Lăng Măng Chua', nameJa: 'なまず と さんたん の なべ (ナマズと酸筍鍋)', price: '340.000đ', categoryId: 'hotpot', script: ALL_DIALOGUE_LINES.slice(16, 18) },
+      { id: 'hotpot-10', number: 10, nameVi: 'Lẩu Ếch Măng Củ', nameJa: 'かえる と たけのこ の なべ (カエルと竹ノ子鍋)', price: '270.000đ', categoryId: 'hotpot', script: ALL_DIALOGUE_LINES.slice(18, 20) },
+      { id: 'hotpot-11', number: 11, nameVi: 'Lẩu Bò Viên', nameJa: 'ぎゅうだんご なべ (牛肉団子鍋)', price: '250.000đ', categoryId: 'hotpot', script: ALL_DIALOGUE_LINES.slice(20, 22) },
+      { id: 'hotpot-12', number: 12, nameVi: 'Lẩu Thập Cẩm', nameJa: 'みっくす なべ (ミックス鍋)', price: '360.000đ', categoryId: 'hotpot', script: ALL_DIALOGUE_LINES.slice(22, 24) },
+      { id: 'hotpot-13', number: 13, nameVi: 'Lẩu Cá Chép Giòn', nameJa: 'こい なべ (鯉鍋)', price: '350.000đ', categoryId: 'hotpot', script: ALL_DIALOGUE_LINES.slice(24, 26) }
     ]
   },
   {
@@ -492,98 +412,19 @@ export const MENU_CATEGORIES: MenuCategory[] = [
     titleVi: 'Món ăn kèm',
     emoji: '🍤',
     items: [
-      {
-        id: 'side-1',
-        number: 1,
-        nameVi: 'Rau Củ Chiên Giòn',
-        nameJa: 'やさい の てんぷら (野菜天ぷら)',
-        price: '55.000đ',
-        categoryId: 'side',
-        badge: 'Chay / Vegetarian',
-        script: ALL_DIALOGUE_LINES.slice(30, 33)
-      },
-      {
-        id: 'side-2',
-        number: 2,
-        nameVi: 'Chả Giò Tôm Thịt Chiên',
-        nameJa: 'おにく と えび の あげもの (揚げ春巻き)',
-        price: '75.000đ',
-        categoryId: 'side',
-        badge: 'Khuyên dùng',
-        script: ALL_DIALOGUE_LINES.slice(33, 36)
-      },
-      {
-        id: 'side-3',
-        number: 3,
-        nameVi: 'Nem Rán Hà Nội',
-        nameJa: 'はのい ふう あげ はるまき (ハノイ風春巻き)',
-        price: '70.000đ',
-        categoryId: 'side',
-        script: ALL_DIALOGUE_LINES.slice(36, 39)
-      },
-      {
-        id: 'side-4',
-        number: 4,
-        nameVi: 'Gỏi Cuốn Tôm Thịt',
-        nameJa: 'なま はるまき (生春巻き)',
-        price: '60.000đ',
-        categoryId: 'side',
-        script: ALL_DIALOGUE_LINES.slice(39, 42)
-      },
-      {
-        id: 'side-5',
-        number: 5,
-        nameVi: 'Bánh Xèo Miền Tây',
-        nameJa: 'べとなむ ふう おこのみやき (バインセオ)',
-        price: '85.000đ',
-        categoryId: 'side',
-        script: ALL_DIALOGUE_LINES.slice(42, 45)
-      },
-      {
-        id: 'side-6',
-        number: 6,
-        nameVi: 'Cánh Gà Chiên Nước Mắm',
-        nameJa: 'とり てばさき の ぬっくまむ あげ (手羽先揚げ)',
-        price: '90.000đ',
-        categoryId: 'side',
-        script: ALL_DIALOGUE_LINES.slice(45, 48)
-      },
-      {
-        id: 'side-7',
-        number: 7,
-        nameVi: 'Khoai Tây Chiên Bơ Tỏi',
-        nameJa: 'ふらいど ぽてと (フライドポテト)',
-        price: '45.000đ',
-        categoryId: 'side',
-        script: ALL_DIALOGUE_LINES.slice(48, 51)
-      },
-      {
-        id: 'side-8',
-        number: 8,
-        nameVi: 'Gỏi Ngó Sen Tôm Thịt',
-        nameJa: 'はす の め と えび の さらだ (蓮の芽サラダ)',
-        price: '80.000đ',
-        categoryId: 'side',
-        script: ALL_DIALOGUE_LINES.slice(51, 53)
-      },
-      {
-        id: 'side-9',
-        number: 9,
-        nameVi: 'Dồi Sụn Chiên Giòn',
-        nameJa: 'べとなむ ふう ぶた なんこつ そーせーじ (豚ナンコツソーセージ)',
-        price: '75.000đ',
-        categoryId: 'side',
-        script: ALL_DIALOGUE_LINES.slice(53, 55)
-      },
-      {
-        id: 'side-10',
-        number: 10,
-        nameVi: 'Phở Cuốn Thịt Bò Hà Nội',
-        nameJa: 'ぎゅうにく の ふぉー まき (牛肉フォー巻き)',
-        price: '70.000đ',
-        categoryId: 'side',
-        script: ALL_DIALOGUE_LINES.slice(55, 57)
-      }
+      { id: 'side-1', number: 1, nameVi: 'Rau Củ Chiên Giòn', nameJa: 'やさい の てんぷら (野菜天ぷら)', price: '55.000đ', categoryId: 'side', badge: 'Chay / Vegetarian', script: ALL_DIALOGUE_LINES.slice(26, 28) },
+      { id: 'side-2', number: 2, nameVi: 'Chả Giò Tôm Thịt Chiên', nameJa: 'おにく と えび の あげもの (揚げ春巻き)', price: '75.000đ', categoryId: 'side', badge: 'Khuyên dùng', script: ALL_DIALOGUE_LINES.slice(28, 30) },
+      { id: 'side-3', number: 3, nameVi: 'Nem Rán Hà Nội', nameJa: 'はのい ふう あげ はるまき (ハノイ風春巻き)', price: '70.000đ', categoryId: 'side', script: ALL_DIALOGUE_LINES.slice(30, 32) },
+      { id: 'side-4', number: 4, nameVi: 'Gỏi Cuốn Tôm Thịt', nameJa: 'なま はるまき (生春巻き)', price: '60.000đ', categoryId: 'side', script: ALL_DIALOGUE_LINES.slice(32, 34) },
+      { id: 'side-5', number: 5, nameVi: 'Bánh Xèo Miền Tây', nameJa: 'べとなむ ふう おこのみやき (バインセオ)', price: '85.000đ', categoryId: 'side', script: ALL_DIALOGUE_LINES.slice(34, 36) },
+      { id: 'side-6', number: 6, nameVi: 'Cánh Gà Chiên Nước Mắm', nameJa: 'とり てばさき の ぬっくまむ あげ (手羽先揚げ)', price: '90.000đ', categoryId: 'side', script: ALL_DIALOGUE_LINES.slice(36, 38) },
+      { id: 'side-7', number: 7, nameVi: 'Khoai Tây Chiên Bơ Tỏi', nameJa: 'ふらいど ぽてと (フライドポテト)', price: '45.000đ', categoryId: 'side', script: ALL_DIALOGUE_LINES.slice(38, 40) },
+      { id: 'side-8', number: 8, nameVi: 'Gỏi Ngó Sen Tôm Thịt', nameJa: 'はす の め と えび の さらだ (蓮の芽サラダ)', price: '80.000đ', categoryId: 'side', script: ALL_DIALOGUE_LINES.slice(40, 42) },
+      { id: 'side-9', number: 9, nameVi: 'Dồi Sụn Chiên Giòn', nameJa: 'べとなむ ふう ぶた なんこつ そーせーじ (豚ナンコツソーセージ)', price: '75.000đ', categoryId: 'side', script: ALL_DIALOGUE_LINES.slice(42, 44) },
+      { id: 'side-10', number: 10, nameVi: 'Phở Cuốn Thịt Bò Hà Nội', nameJa: 'ぎゅうにく の ふぉー まき (牛肉フォー巻き)', price: '70.000đ', categoryId: 'side', script: ALL_DIALOGUE_LINES.slice(44, 46) },
+      { id: 'side-11', number: 11, nameVi: 'Đậu Hũ Chiên Giòn', nameJa: 'あげ どうふ (揚げ豆腐)', price: '45.000đ', categoryId: 'side', script: ALL_DIALOGUE_LINES.slice(46, 48) },
+      { id: 'side-12', number: 12, nameVi: 'Nộm Đu Đủ', nameJa: 'ぱぱいや さらだ (パパイヤサラダ)', price: '65.000đ', categoryId: 'side', script: ALL_DIALOGUE_LINES.slice(48, 50) },
+      { id: 'side-13', number: 13, nameVi: 'Chả Giò Chay', nameJa: 'ちゃい はるまき (精進春巻き)', price: '60.000đ', categoryId: 'side', script: ALL_DIALOGUE_LINES.slice(50, 52) }
     ]
   },
   {
@@ -592,98 +433,19 @@ export const MENU_CATEGORIES: MenuCategory[] = [
     titleVi: 'Đồ uống',
     emoji: '🥤',
     items: [
-      {
-        id: 'drink-1',
-        number: 1,
-        nameVi: 'Trà Ô Long Lạnh',
-        nameJa: 'うーろんちゃ (烏龍茶)',
-        price: '25.000đ',
-        categoryId: 'drink',
-        script: ALL_DIALOGUE_LINES.slice(57, 59)
-      },
-      {
-        id: 'drink-2',
-        number: 2,
-        nameVi: 'Coca Cola / Pepsi',
-        nameJa: 'こーら (コーラ)',
-        price: '25.000đ',
-        categoryId: 'drink',
-        badge: 'Phổ biến',
-        script: ALL_DIALOGUE_LINES.slice(59, 61)
-      },
-      {
-        id: 'drink-3',
-        number: 3,
-        nameVi: 'Trà Chanh Phố Cổ',
-        nameJa: 'べとなむ れもん てぃー (ベトナムレモンティー)',
-        price: '20.000đ',
-        categoryId: 'drink',
-        script: ALL_DIALOGUE_LINES.slice(61, 63)
-      },
-      {
-        id: 'drink-4',
-        number: 4,
-        nameVi: 'Trà Tắc Xí Muội',
-        nameJa: 'きんかん と ほしうめ の ちゃ (金柑梅茶)',
-        price: '25.000đ',
-        categoryId: 'drink',
-        script: ALL_DIALOGUE_LINES.slice(63, 65)
-      },
-      {
-        id: 'drink-5',
-        number: 5,
-        nameVi: 'Cà Phê Sữa Đá Việt Nam',
-        nameJa: 'べとなむ れんにゅう あいす こーひー (ベトナムコーヒー)',
-        price: '30.000đ',
-        categoryId: 'drink',
-        badge: 'Đặc sản',
-        script: ALL_DIALOGUE_LINES.slice(65, 67)
-      },
-      {
-        id: 'drink-6',
-        number: 6,
-        nameVi: 'Nước Dừa Tươi Nguyên Trái',
-        nameJa: 'ふれっしゅ ここなっつ じゅーす (フレッシュココナッツ)',
-        price: '35.000đ',
-        categoryId: 'drink',
-        script: ALL_DIALOGUE_LINES.slice(67, 69)
-      },
-      {
-        id: 'drink-7',
-        number: 7,
-        nameVi: 'Nước Ép Chanh Dây Lạnh',
-        nameJa: 'ぱっしょん ふるーつ じゅーす (パッションフルーツ)',
-        price: '30.000đ',
-        categoryId: 'drink',
-        script: ALL_DIALOGUE_LINES.slice(69, 71)
-      },
-      {
-        id: 'drink-8',
-        number: 8,
-        nameVi: 'Soda Chanh Muối Đá',
-        nameJa: 'れもん しお そーだ (レモン塩ソーダ)',
-        price: '25.000đ',
-        categoryId: 'drink',
-        script: ALL_DIALOGUE_LINES.slice(71, 73)
-      },
-      {
-        id: 'drink-9',
-        number: 9,
-        nameVi: 'Trà Vải Lài Thơm Mát',
-        nameJa: 'らいち じゃすみん てぃー (ライチジャスミン茶)',
-        price: '30.000đ',
-        categoryId: 'drink',
-        script: ALL_DIALOGUE_LINES.slice(73, 75)
-      },
-      {
-        id: 'drink-10',
-        number: 10,
-        nameVi: 'Sinh Tố Bơ Béo Ngậy',
-        nameJa: 'あぼかど すむーじー (アボカドスムージー)',
-        price: '35.000đ',
-        categoryId: 'drink',
-        script: ALL_DIALOGUE_LINES.slice(75, 77)
-      }
+      { id: 'drink-1', number: 1, nameVi: 'Trà Ô Long Lạnh', nameJa: 'うーろんちゃ (烏龍茶)', price: '25.000đ', categoryId: 'drink', script: ALL_DIALOGUE_LINES.slice(52, 54) },
+      { id: 'drink-2', number: 2, nameVi: 'Coca Cola / Pepsi', nameJa: 'こーら (コーラ)', price: '25.000đ', categoryId: 'drink', badge: 'Phổ biến', script: ALL_DIALOGUE_LINES.slice(54, 56) },
+      { id: 'drink-3', number: 3, nameVi: 'Trà Chanh Phố Cổ', nameJa: 'べとなむ れもん てぃー (ベトナムレモンティー)', price: '20.000đ', categoryId: 'drink', script: ALL_DIALOGUE_LINES.slice(56, 58) },
+      { id: 'drink-4', number: 4, nameVi: 'Trà Tắc Xí Muội', nameJa: 'きんかん と ほしうめ の ちゃ (金柑梅茶)', price: '25.000đ', categoryId: 'drink', script: ALL_DIALOGUE_LINES.slice(58, 60) },
+      { id: 'drink-5', number: 5, nameVi: 'Cà Phê Sữa Đá Việt Nam', nameJa: 'べとなむ れんにゅう あいす こーひー (ベトナムコーヒー)', price: '30.000đ', categoryId: 'drink', badge: 'Đặc sản', script: ALL_DIALOGUE_LINES.slice(60, 62) },
+      { id: 'drink-6', number: 6, nameVi: 'Nước Dừa Tươi Nguyên Trái', nameJa: 'ふれっしゅ ここなっつ じゅーす (フレッシュココナッツ)', price: '35.000đ', categoryId: 'drink', script: ALL_DIALOGUE_LINES.slice(62, 64) },
+      { id: 'drink-7', number: 7, nameVi: 'Nước Ép Chanh Dây Lạnh', nameJa: 'ぱっしょん ふるーつ じゅーす (パッションフルーツ)', price: '30.000đ', categoryId: 'drink', script: ALL_DIALOGUE_LINES.slice(64, 66) },
+      { id: 'drink-8', number: 8, nameVi: 'Soda Chanh Muối Đá', nameJa: 'れもん しお そーだ (レモン塩ソーダ)', price: '25.000đ', categoryId: 'drink', script: ALL_DIALOGUE_LINES.slice(66, 68) },
+      { id: 'drink-9', number: 9, nameVi: 'Trà Vải Lài Thơm Mát', nameJa: 'らいち じゃすみん てぃー (ライチジャスミン茶)', price: '30.000đ', categoryId: 'drink', script: ALL_DIALOGUE_LINES.slice(68, 70) },
+      { id: 'drink-10', number: 10, nameVi: 'Sinh Tố Bơ Béo Ngậy', nameJa: 'あぼかど すむーじー (アボカドスムージー)', price: '35.000đ', categoryId: 'drink', script: ALL_DIALOGUE_LINES.slice(70, 72) },
+      { id: 'drink-11', number: 11, nameVi: 'Nước Ép Dưa Hấu', nameJa: 'すいか じゅーす (スイカジュース)', price: '30.000đ', categoryId: 'drink', script: ALL_DIALOGUE_LINES.slice(72, 74) },
+      { id: 'drink-12', number: 12, nameVi: 'Trà Sâm Dứa', nameJa: 'ぱいなっぷる じんせん てぃー (パイナップル人参茶)', price: '25.000đ', categoryId: 'drink', script: ALL_DIALOGUE_LINES.slice(74, 76) },
+      { id: 'drink-13', number: 13, nameVi: 'Nước Khoáng', nameJa: 'みねらる うぉーたー (ミネラルウォーター)', price: '15.000đ', categoryId: 'drink', script: ALL_DIALOGUE_LINES.slice(76, 77) }
     ]
   }
 ];

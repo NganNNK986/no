@@ -57,14 +57,14 @@
   }
 
   .print-script-line {
-    font-size: 6px;
+    font-size: 5px;
     color: #888888;
     line-height: 1.1;
     margin-bottom: 1px;
   }
 
   .print-script-speaker {
-    font-size: 6px;
+    font-size: 5px;
     color: #888888;
     font-weight: bold;
   }
